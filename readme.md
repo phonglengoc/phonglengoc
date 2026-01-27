@@ -10,7 +10,7 @@
   <a href="mailto:lengocuyphong@gmail.com">
     <img src="https://img.shields.io/badge/Email-lengocuyphong%40gmail.com-red?style=flat-square&logo=gmail">
   </a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE">
+  <a href="(https://www.linkedin.com/in/phong-le-ngoc-b196a53a8/)">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin">
   </a>
 </div>
