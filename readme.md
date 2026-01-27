@@ -4,7 +4,7 @@
   <h3 align="center">Aspiring RTL Design & Verification Engineer 🚀</h3>
 
   <p align="center"> 
-    Top 5 Computer Engineering Student @ HCMUT | FPGA Enthusiast | Problem Solver
+    Undergraduate Engineering Student @ HCMUT | FPGA Enthusiast | Problem Solver
   </p>
   
   <a href="mailto:lengocuyphong@gmail.com">
