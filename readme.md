@@ -22,11 +22,16 @@ Dedicated exclusively to **Digital Design Verification** for ASIC and SoC design
 | **Methodology & HDL** | **UVM 1.2** *(Fundamentals: agent, driver, monitor, sequencer, scoreboard, env, sequences)*, **Verilog HDL** (RTL analysis & testbenches), **Cocotb** (Python) |
 | **Synopsys Toolchain** | **VCS** (simulation), **Verdi** (FSDB waveform & nTrace debug), **URG** (code & functional coverage), **SpyGlass** (RTL lint & static checks) |
 | **Cadence Toolchain** | **Xcelium** (`xrun` simulation), **SimVision** / **Verisium Debug** (waveform & debug), **HAL** (RTL lint) |
-| **Protocols & Workflow** | **AMBA APB**, **UART**, **RV32IM** microarchitecture · **Linux**, **Makefile**, **Bash**, **Tcl**, **Python**, **Git** |
+| **Protocols & Workflow** | **AMBA APB**, **AMBA AXI4-Full** *(learning subset)*, **UART**, **RV32IM** microarchitecture · **Linux**, **Makefile**, **Bash**, **Tcl**, **Python**, **Git** |
 
 ---
 
 ## Selected Public Repositories
+
+### [AXI4-Full SVA Protocol Verification Demo](https://github.com/phonglengoc/axi4-full-sva-demo) *(Self-Study Side Project)*
+`SystemVerilog` · `SVA` · `AMBA AXI4-Full` · `VCS / Verdi` · `Xcelium`
+- Self-study side project built to practice AMBA AXI4-Full protocol rules and SystemVerilog Assertions on a custom 32-bit Master/Slave subset (FIXED, INCR, WRAP bursts, `WSTRB`, `DECERR`, full-duplex concurrency).
+- Includes a verification plan matrix mapping 7 directed scenarios to 16 concurrent SVA assertions (`$stable`, `$isunknown`, local-variable beat counters) and 10 functional `cover property` checks, verified on both Synopsys VCS/Verdi and Cadence Xcelium.
 
 ### [Register-based Timer with APB Interface](https://github.com/phonglengoc/Register-based-Timer-with-APB-interface)
 `Verilog` · `AMBA APB`
