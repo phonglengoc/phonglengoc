@@ -1,68 +1,44 @@
-<div align="center">
-  <h1 align="center">Hi there, I'm Le Ngoc Uy Phong! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"></h1>
-  
-  <h3 align="center">Aspiring RTL Design & Verification Engineer 🚀</h3>
+# Le Ngoc Uy Phong
 
-  <p align="center"> 
-    Undergraduate Engineering Student @ HCMUT | FPGA Enthusiast | Problem Solver
-  </p>
-  
-  <a href="mailto:lengocuyphong@gmail.com">
-    <img src="https://img.shields.io/badge/Email-lengocuyphong%40gmail.com-red?style=flat-square&logo=gmail">
-  </a>
-  <a href="https://www.linkedin.com/in/phong-le-ngoc-b196a53a8/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin">
-  </a>
-</div>
+**Digital Design Verification (DV)**  
+Senior Computer Engineering Student, Ho Chi Minh City University of Technology (HCMUT)  
+Open to **Design Verification Internship** opportunities (ASIC / IP / Subsystem Verification)
+
+[Email](mailto:lengocuyphong@gmail.com) · [LinkedIn](https://www.linkedin.com/in/phong-le-ngoc-b196a53a8/)
 
 ---
 
-### 👨‍💻 About Me
+## Focus
 
-I am a senior **Computer Engineering** student at **Ho Chi Minh City University of Technology (HCMUT)** with a relentless drive to understand how computing works from the transistor level up. 
-
-My passion lies in **Digital Logic Design** and **FPGA Prototyping**. I love the challenge of optimizing hardware for Timing, Area, and Power. Beyond hardware, I am deeply interested in **Data Structures & Algorithms (DSA)**, believing that strong algorithmic thinking is the key to solving complex engineering problems effectively.
+Dedicated exclusively to **Digital Design Verification** for ASIC and SoC designs. My core technical focus is **SystemVerilog for Verification**, complemented by **UVM 1.2 fundamentals**, solid RTL microarchitecture comprehension, and dual-vendor simulation and debug experience across **Synopsys** and **Cadence** Linux flows.
 
 ---
 
-### 🛠️ Technical Arsenal
+## Verification Skills & EDA Toolchain
 
-| **Domain** | **Technologies & Tools** |
+| Area | Tools & Technologies |
 | :--- | :--- |
-| **Hardware Design** | ![Verilog](https://img.shields.io/badge/-Verilog-blue?style=flat-square) ![FPGA](https://img.shields.io/badge/-FPGA-orange?style=flat-square) ![Vivado](https://img.shields.io/badge/-AMD%20Vivado-green?style=flat-square) ![Vitis](https://img.shields.io/badge/-Vitis-blueviolet?style=flat-square) |
-| **Verification** | ![Testbench](https://img.shields.io/badge/-Testbench-lightgrey?style=flat-square) ![HIL](https://img.shields.io/badge/-Hardware%20in%20Loop-yellow?style=flat-square) ![UART](https://img.shields.io/badge/-UART%20Validation-important?style=flat-square) |
-| **Programming** | ![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Assembly](https://img.shields.io/badge/-MIPS%20Assembly-brown?style=flat-square) |
-| **Environment** | ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) ![STM32](https://img.shields.io/badge/-STM32-03234B?style=flat-square&logo=stmicroelectronics) |
+| **Primary Language** | **SystemVerilog for Verification** (OOP, interfaces, clocking blocks, constrained-random stimulus, functional coverage, basic SVA, self-checking testbenches) |
+| **Methodology & HDL** | **UVM 1.2** *(Fundamentals: agent, driver, monitor, sequencer, scoreboard, env, sequences)*, **Verilog HDL** (RTL analysis & testbenches), **Cocotb** (Python) |
+| **Synopsys Toolchain** | **VCS** (simulation), **Verdi** (FSDB waveform & nTrace debug), **URG** (code & functional coverage), **SpyGlass** (RTL lint & static checks) |
+| **Cadence Toolchain** | **Xcelium** (`xrun` simulation), **SimVision** / **Verisium Debug** (waveform & debug), **HAL** (RTL lint) |
+| **Protocols & Workflow** | **AMBA APB**, **UART**, **RV32IM** microarchitecture · **Linux**, **Makefile**, **Bash**, **Tcl**, **Python**, **Git** |
 
 ---
 
-### 🚀 Featured Projects
+## Selected Public Repositories
 
-#### 🔐 [High-Performance SHA3-256 IP Core on FPGA](https://github.com/phonglengoc/sha3-256)
-> *Verilog, Python, FPGA (Arty Z7-20), UART Verification*
-* **The Build:** Engineered a modular Keccak-f[1600] architecture compliant with NIST FIPS 202.
-* **Optimization:** Designed a custom FSM controller to minimize execution cycles and maximize throughput.
-* **Verification:** Validated bit-accurate results on-board using a Python-based UART verification framework (Hardware-in-the-Loop).
-* **Status:** *Preparing for scientific publication.*
+### [Register-based Timer with APB Interface](https://github.com/phonglengoc/Register-based-Timer-with-APB-interface)
+`Verilog` · `AMBA APB`
+- Configurable register-based timer RTL with an AMBA APB slave FSM supporting wait states (`apb_slave_fsm.v`, `timer_core.v`, `timer_top.v`).
+- Verified register read/write transactions, wait-state handshaking, and timer configurations using a Verilog testbench (`tb/test_bench.v`).
 
-#### ⚡ [32-bit RISC-V 5-Stage Pipelined Processor](https://github.com/phonglengoc/RISCV-Pipelined-Processor)
-> *Verilog, Computer Architecture, Vivado*
-* **The Build:** Implemented a complete 32-bit RISC-V core from scratch.
-* **Optimization:** Solved critical path timing violations by architecting a custom **8-stage Pipelined Divider**.
-* **Key Tech:** Forwarding unit, Hazard detection, Carry-Lookahead Adder (CLA).
+### [5-Stage Pipelined RISC-V Processor (RV32IM)](https://github.com/phonglengoc/RISCV-Pipelined-Processor)
+`Verilog` · `Cocotb` · `pytest` · `RV32IM`
+- 5-stage pipelined RV32IM processor with forwarding bypasses (MX/WX/WD), load-use stall logic, branch flush, Carry-Lookahead Adder, and an 8-stage pipelined unsigned divider.
+- Verified instruction execution and pipeline hazard behavior using a **Cocotb + pytest** architectural test suite (`testcase_python/testbench.py`) alongside directed Verilog testbenches (`tb_processor.v`).
 
-#### 🧮 [MIPS-based 2D Convolution Accelerator](https://github.com/phonglengoc/Convolution-operation-by-MIPS-assembly)
-> *MIPS Assembly, DSP, Low-level Memory Management*
-* **The Build:** Implemented a high-precision convolution algorithm with matrix padding and stride control.
-* **Highlight:** Manually managed word-aligned data offsets and optimized FPU floating-point operations for maximum efficiency.
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=phonglengoc&show_icons=true&theme=radical&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=phonglengoc&layout=compact&theme=radical&hide_border=true" height="150" alt="languages graph" />
-</div>
-
----
+### [SHA3-256 Hardware Core with UART Interface](https://github.com/phonglengoc/sha3-256)
+`Verilog` · `UART` · `Keccak-f[1600]`
+- Modular SHA3-256 (`Keccak-f[1600]`) RTL core integrated with UART RX/TX and a synchronization bridge (`top_system.v`).
+- Validated module-level and system-level functionality through pattern-driven Verilog testbenches (`tb_top_system*.v`, `tb_uart.v`, `PATTERN_wrapper_v4.v`).
